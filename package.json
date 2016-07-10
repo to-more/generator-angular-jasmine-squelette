@@ -1,12 +1,12 @@
 {
-  "name": "generator-squelette-jasmine",
+  "name": "generator-angular-jasmine-squelette",
   "version": "0.2.3",
-  "description": "Generator to build jasmine test skelleton.",
+  "description": "Generator to build jasmine angular based test skelleton.",
    "files": [
     "generators/app",
     "generators/directive"
   ],
-   "keywords": ["yeoman-generator", "jasmine", "yo", "unit test", "angular"],
+   "keywords": ["yeoman-generator", "jasmine", "yo", "unit", "test", "angular", "BDD"],
   "dependencies": {
     "yeoman-generator": "^0.20.2",
     "yosay": "^1.0.0",
