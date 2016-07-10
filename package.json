@@ -1,6 +1,6 @@
 {
-  "name": "generator-squelette-jasmin",
-  "version": "0.1.2",
+  "name": "generator-squelette-jasmine",
+  "version": "0.1.3",
   "description": "Generator to build jasmine test skelleton.",
    "files": [
     "generators/app",
