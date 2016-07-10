@@ -1,0 +1,12 @@
+{
+  "icon":"suitcase",
+  "parentModulePrefix": "comercialView",
+  "destinationPath": "infinitum_modules/comercial/servicios/scripts/servicios.module.js",
+  "moduleName": "infinitum.comercial.servicios",
+  "menuName": "exenciones",
+  "permission": "inf_comercial_agentes",
+  "initialState": "comercialView",
+  "moduleDisplayName": "Exenciones",
+  "rootTemplatePath": "infinitum_modules/comercial/views",
+  "rootControllerPath": "infinitum_modules/comercial/scripts/controllers/exencion"
+}
