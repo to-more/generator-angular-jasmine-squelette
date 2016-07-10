@@ -12,5 +12,9 @@
     "yosay": "^1.0.0",
     "chalk": "^1.0.0",
     "yeoman-test": "^1.4.0"
+  },
+  "repository" : { 
+    "type" : "git", 
+    "url" : "https://github.com/to-more/generator-squelette-jasmine.git"
   }
 }
