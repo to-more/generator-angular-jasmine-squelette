@@ -6,7 +6,7 @@
     "generators/app",
     "generators/directive"
   ],
-   "keywords": ["yeoman-generator"],
+   "keywords": ["yeoman-generator", "jasmine", "yo", "unit test", "angular"],
   "dependencies": {
     "yeoman-generator": "^0.20.2",
     "yosay": "^1.0.0",
