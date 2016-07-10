@@ -27,7 +27,7 @@ module.exports = generators.Base.extend({
         }
     },
 
-	writing: {
+    writing: {
         config: function () {
             this.fs.copyTpl(
                 this.templatePath('_directive.js'),
@@ -38,5 +38,5 @@ module.exports = generators.Base.extend({
                 }
             );
         }
-	}
+    }
 });
