@@ -18,21 +18,33 @@ module.exports = generators.Base.extend({
                 name    : 'runDirectives',
                 message : 'Would you like to run directive generator',
                 default: true
+            },
+            {
+                type    : 'confirm',
+                name    : 'runFilter',
+                message : 'Would you like to run filter generator',
+                default: true
             }
         ], function(anwsers){
             this.runControllers = anwsers.runControllers;
             this.runDirectives = anwsers.runDirectives;
+            this.runFilter = anwsers.runFilter;
             done();
         }.bind(this))
     },
     composeWithController: function(){
         if(this.runControllers){
-            this.composeWith('squelette-jasmin:controller', {options: {'skip-welcome-message': 'skip-welcome-message'}})
+            this.composeWith('angular-jasmine-squelette:controller', {options: {'skip-welcome-message': 'skip-welcome-message'}})
         }
     },
     composeWithDirective: function(){
         if(this.runDirectives){
-            this.composeWith('squelette-jasmin:directive', {options: {'skip-welcome-message': 'skip-welcome-message'}});
+            this.composeWith('angular-jasmine-squelette:directive', {options: {'skip-welcome-message': 'skip-welcome-message'}});
+        }
+    },
+    composeWithFilter: function(){
+        if(this.runFilter){
+            this.composeWith('angular-jasmine-squelette:filter', {options: {'skip-welcome-message': 'skip-welcome-message'}});
         }
     }
 });
