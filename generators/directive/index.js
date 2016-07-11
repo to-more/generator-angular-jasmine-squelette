@@ -1,10 +1,6 @@
 'use strict';
 
-
-var chalk = require('chalk');
-var yosay = require('yosay');
 var generators = require('yeoman-generator');
-var assert = require('yeoman-assert');
 var GeneratorBuilder = require('../helpers/generator-builder');
 
 module.exports = generators.Base.extend({
@@ -13,7 +9,6 @@ module.exports = generators.Base.extend({
 	    // Calling the super constructor is important so our generator is correctly set up
 	    generators.Base.apply(this, arguments);
         this.generatorBuilder = new GeneratorBuilder(this, 'directive');
-        this.nameDirective = 'directive-test';
         this.generatorBuilder.registerOptions();
         this.generatorBuilder.registerArguments();
         this.generatorBuilder.welcome();

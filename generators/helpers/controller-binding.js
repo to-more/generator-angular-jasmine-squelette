@@ -2,11 +2,12 @@
 
 var self = this;
 
-var DirectiveBinding = module.exports = function DirectiveBinding(generator){
+var ControllerBinding = module.exports = function ControllerBinding(generator){
     self.generator = generator;
 };
 
-DirectiveBinding.prototype.bind = function (config) {
-    self.generator.controllerDirective = config.controllerDirective;
+ControllerBinding.prototype.bind = function (config) {
+    self.generator.nameController = config.nameController;
     self.generator.controllerModule = config.controllerModule;
+
 }
