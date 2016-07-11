@@ -4,19 +4,23 @@ var assert = require('yeoman-assert');
 var yosay = require('yosay');
 var DirectivePrompt = require('./directive-prompt');
 var ControllerPrompt = require('./controller-prompt');
+var FilterPrompt = require('./filter-prompt');
 var DirectiveBinding = require('./directive-binding');
 var ControllerBinding = require('./controller-binding');
+var FilterBinding = require('./filter-binding');
 
 var self = this;
 
 var bindings = {
     "directive": DirectiveBinding,
-    "controller": ControllerBinding
+    "controller": ControllerBinding,
+    "filter": FilterBinding
 };
 
 var prompt = {
     "directive": DirectivePrompt,
-    "controller": ControllerPrompt
+    "controller": ControllerPrompt,
+    "filter": FilterPrompt
 };
 
 var GeneratorBuilder = module.exports = function GeneratorBuilder(generator, type){
@@ -42,9 +46,7 @@ GeneratorBuilder.prototype.registerOptions = function() {
 
 GeneratorBuilder.prototype.welcome = function(){
     if (!self.generator.options['skip-welcome-message']) {
-        self.generator.log(yosay('Out of the box I scaffold ' +
-                'the ui-router states, create controllers for List View and New with some logic inside, ' +
-                'and build the related templates with useful directives inside')
+        self.generator.log(yosay('I generate some code for you to test angular app with jasmine')
         )
     }
 };
