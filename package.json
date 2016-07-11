@@ -4,7 +4,9 @@
   "description": "Generator to build jasmine angular based test skelleton.",
    "files": [
     "generators/app",
-    "generators/directive"
+    "generators/directive",
+    "generators/controller",
+    "generators/filter"
   ],
    "keywords": ["yeoman-generator", "jasmine", "yo", "unit", "test", "angular", "BDD"],
   "dependencies": {
