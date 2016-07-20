@@ -1,7 +1,7 @@
 {
   "name": "generator-angular-jasmine-squelette",
-  "version": "1.2.2",
-  "description": "Generator to build jasmine angular based test skelleton.",
+  "version": "1.2.3",
+  "description": "Generator to build jasmine's test skeleton for angular apps.",
    "files": [
     "generators/app",
     "generators/directive",
